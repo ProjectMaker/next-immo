@@ -8,10 +8,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'content': "url('/carousel/photo2.jpeg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        sm: '0.8rem'
+      }
     },
   },
   plugins: [],
