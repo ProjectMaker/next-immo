@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div className="text-sm">
       {
-        ITEMS.map(item => <Item {...item} />)
+        ITEMS.map(item => <Item key={item.label} {...item} />)
       }
 
     </div>
