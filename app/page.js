@@ -31,15 +31,15 @@ function MobileItem({img, label, description}) {
 const ITEMS = [{
   img: '/carousel/photo1.jpeg',
   label: 'COMMERCES ALIMENTAIRES',
-  description: 'Qu\'ils soient Artisans, Boulangers, Primeurs, Traiteurs ou Restaurateurs, Nombreux sont les professionnels nous ayant fait confiance pour l\'acquisition ou la vente de leur affaire.'
+  description: 'Qu&apos;ils soient Artisans, Boulangers, Primeurs, Traiteurs ou Restaurateurs, Nombreux sont les professionnels nous ayant fait confiance pour l&apos;acquisition ou la vente de leur affaire.'
 }, {
   img: '/carousel/photo2.jpeg',
   label: 'LAVERIES-PRESSINGS',
-  description: 'Acteur incontournable du secteur, notre cabinet compte plus de 600 clients en portefeuille et vous guide pour appréhender au mieux les pratiques de l\'activité (mises aux normes, rentabilité, étude financière).'
+  description: 'Acteur incontournable du secteur, notre cabinet compte plus de 600 clients en portefeuille et vous guide pour appréhender au mieux les pratiques de l&apos;activité (mises aux normes, rentabilité, étude financière).'
 }, {
   img: '/carousel/photo3.jpeg',
   label: 'HOTELS',
-  description: 'Un commercial spécialiste de ce domaine d\'activité vous conseillera sur toutes les spécificités du CHR (normes de sécurité, classement hôtelier) pour vous aider à faire les bons choix.'
+  description: 'Un commercial spécialiste de ce domaine d&apos;activité vous conseillera sur toutes les spécificités du CHR (normes de sécurité, classement hôtelier) pour vous aider à faire les bons choix.'
 }, {
   img: '/carousel/photo4.jpeg',
   label: 'FONDS DE COMMERCES',
@@ -47,15 +47,15 @@ const ITEMS = [{
 }, {
   img: '/carousel/photo5.jpeg',
   label: 'BÂTIMENTS PROFESSIONNELS',
-  description: 'L\'Aventure immobilière vous guide également dans la transmission ou l\'acquisition de votre entreprise. Nous vous accompagnerons dans toutes les étapes de la transaction jusqu’à l’acte de vente.'
+  description: 'L&apos;Aventure immobilière vous guide également dans la transmission ou l&apos;acquisition de votre entreprise. Nous vous accompagnerons dans toutes les étapes de la transaction jusqu’à l’acte de vente.'
 }, {
   img: '/carousel/photo7.jpeg',
   label: 'BAR-BRASSERIE-TABAC',
   description: 'Notre Cabinet, vous guide dans toutes les démarches spécifiques: normes d’hygiène, licences de débit de boissons, licences restaurant, demandes d’agrément, constitution des dossiers Douanes, paris sportifs, loterie, tabac,'
 }, {
   img: '/carousel/photo8.jpeg',
-  label: 'CESSION D\'ENTREPRISES TPE-PME',
-  description: 'Nous vous accompagnons dans la création et le développement de votre entreprise; recherche de locaux à vendre ou à Louer, Terrains d\'activité, Zones commerciales, Bureaux, entrepôts.'
+  label: 'CESSION D&apos;ENTREPRISES TPE-PME',
+  description: 'Nous vous accompagnons dans la création et le développement de votre entreprise; recherche de locaux à vendre ou à Louer, Terrains d&apos;activité, Zones commerciales, Bureaux, entrepôts.'
 }]
 
 export default function Home() {
