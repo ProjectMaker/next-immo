@@ -1,33 +1,6 @@
 'use client'
-import {Carousel} from "react-responsive-carousel"
-import "react-responsive-carousel/lib/styles/carousel.css"
+import Image from "next/image"
 
-function CarouselItem({img, label, description}) {
-  return (
-    <div>
-      <img
-        src={img}
-        alt="Aventure immobilière Logo"
-      />
-      <p className="legend">
-        {label}<br/>{description}
-      </p>
-    </div>
-  )
-}
-
-function MobileItem({img, label, description}) {
-  return (
-    <div className="flex flex-col mb-4">
-      <img
-        src={img}
-        alt="Aventure immobilière Logo"
-      />
-      <h1 className="text-lime-400 mt-2">{label}</h1>
-      <p className={"mt-2"}>{description}</p>
-    </div>
-  )
-}
 const ITEMS = [{
   img: '/carousel/photo1.jpeg',
   label: 'COMMERCES ALIMENTAIRES',
@@ -58,24 +31,28 @@ const ITEMS = [{
   description: 'Nous vous accompagnons dans la création et le développement de votre entreprise; recherche de locaux à vendre ou à Louer, Terrains d&apos;activité, Zones commerciales, Bureaux, entrepôts.'
 }]
 
+function Item({img, label, description}) {
+  return (
+    <div className="flex flex-col mb-4">
+      <h1 className="font-bold text-lime-400 my-2" dangerouslySetInnerHTML={{__html: label}} />
+      <Image
+        src={img}
+        width={660}
+        height={470}
+        alt={label}
+      />
+      <p className={"mt-2"} dangerouslySetInnerHTML={{__html: description}} />
+    </div>
+  )
+}
+
 export default function Home() {
   return (
-    <>
-      <div className={"hidden sm:inline-flex"}>
-        <Carousel showArrows={true}>
-          {
-            ITEMS.map(item => <CarouselItem {...item} />)
-          }
-        </Carousel>
-      </div>
-      <div className={"flex flex-col text-sm sm:hidden"}>
+    <div className="text-sm">
+      {
+        ITEMS.map(item => <Item {...item} />)
+      }
 
-          {
-            ITEMS.map(item => <MobileItem {...item} />)
-          }
-
-      </div>
-
-    </>
+    </div>
   )
 }

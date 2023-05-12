@@ -1,10 +1,7 @@
-import { BurgerMenu } from "../../components/Menu";
-
 export default function FeesPage() {
   return (
     <div className="text-sm">
-      <BurgerMenu />
-      <h1 className="text-base font-bold mb-4 text-lime-400">Ventes</h1>
+      <h1 className="font-bold mb-4 text-lime-400">Ventes</h1>
       <table className="border-collapse w-full mb-2">
         <thead>
         <tr>
@@ -35,7 +32,7 @@ export default function FeesPage() {
         </tr>
         </tbody>
       </table>
-      <h1 className="text-base  font-bold mb-4 text-lime-400">Locations</h1>
+      <h1 className="font-bold mb-4 text-lime-400">Locations</h1>
       <table className="border-collapse w-full mb-2">
         <tbody>
         <tr>
@@ -48,7 +45,7 @@ export default function FeesPage() {
         </tr>
         </tbody>
       </table>
-      <h1 className="text-base  font-bold mb-4 text-lime-400">Etat des lieux</h1>
+      <h1 className="font-bold mb-4 text-lime-400">Etat des lieux</h1>
       <table className="border-collapse w-full mb-2">
         <tbody>
         <tr>
@@ -77,7 +74,7 @@ export default function FeesPage() {
         </tr>
         </tbody>
       </table>
-      <h1 className="text-base  font-bold mb-4 text-lime-400">Locations professionnelles</h1>
+      <h1 className="font-bold mb-4 text-lime-400">Locations professionnelles</h1>
       <p>10% HT du loyer de la période triennale hors frais de rédaction et d&apos;état des lieux</p>
     </div>
   )

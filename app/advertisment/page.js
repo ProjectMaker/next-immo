@@ -38,7 +38,7 @@ const Home = async ({ searchParams }) => {
               <div className={"flex flex-col mb-4 text-sm"} key={item.id}>
                 <div className={"text-white"}>
                   <div className={"flex flex-row justify-between"}>
-                    <span className="text-lime-500" dangerouslySetInnerHTML={{__html: item.title}} />
+                    <span className="font-bold text-lime-400" dangerouslySetInnerHTML={{__html: item.title}} />
                     <span>{item.publishedAt ? dayjs(item.publishedAt).format("DD/MM/YYYY") : null}</span>
                   </div>
                   {Boolean(item.price) && <div>Prix : {item.price}</div>}

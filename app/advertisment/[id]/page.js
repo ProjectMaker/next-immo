@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { getDetail } from "@/lib/advertisment";
 
 export default async function Detail({searchParams, params}) {
@@ -31,8 +32,9 @@ export default async function Detail({searchParams, params}) {
         <li>Département : {detail.department}</li>
       </ul>
       {
-        Boolean(detail.pictures.length) && detail.pictures.map(({id, url}) => <div key={id} className="mt-2"><img
-          src={url}/></div>)
+        Boolean(detail.pictures.length) && detail.pictures.map(({id, url}) => (
+          <div key={id} className="mt-2"><Image src={url} width={400} height={400}/></div>
+        ))
       }
     </div>
   )
