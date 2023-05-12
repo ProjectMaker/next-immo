@@ -7,8 +7,9 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:GvLCgvbQKvQ3ePmF@db.rpkztpxmbennrulekbrj.supabase.co:5432/postgres"
+  url = env("POSTGRES_URL")
 }
+
 
 model RealEstateAd {
     id                  Int         @id @default(autoincrement())
