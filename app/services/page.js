@@ -20,12 +20,12 @@ export default function ServicesPage() {
 
       <ul className="list-disc ml-4 mb-4">
         <li>Une étude personnalisée du besoin de financement total (acquisition, droits&nbsp;et honoraires);</li>
-        <li>"Un dossier d&apos;aide à la décision"  documents comptables, bail, rapport d&apos;activité.</li>
+        <li>&ldquo;Un dossier d&apos;aide à la décision&ldquo;  documents comptables, bail, rapport d&apos;activité.</li>
         <li>Une visite détaillée des affaires sélectionnées</li>
         <li>Une validation financière des dossiers retenus</li>
         <li>Transmission de votre dossier à nos partenaires bancaires pour l&apos;obtention d&apos;un accord</li>
         <li>Aide dans les Formalités administratives (agréments, licences, normes ...)</li>
-        <li>l&apos;envoi des nouvelles affaires par mail avant leur parution grâce à notre "club affaire"</li>
+        <li>l&apos;envoi des nouvelles affaires par mail avant leur parution grâce à notre &ldquo;club affaire&ldquo;</li>
         <li>Aide  à la formalisation d&apos;une offre et aux négociations</li>
         <li>Définition de  votre stratégie patrimoniale après signature d&apos;un mandat de recherche pour être informés les premiers de nos nouvelles opportunités d&apos;investissement</li>
         <li>Mise à disposition de notre liste de prestataires sélectionnés (avocats, comptables, fournisseurs, architecte, courtiers, assureurs)</li>
@@ -55,7 +55,7 @@ export default function ServicesPage() {
       </p>
 
       <ul className="list-disc ml-4 mb-4">
-        <li>Diffusion de votre affaire aux membres de notre "CLUB AFFAIRE"</li>
+        <li>Diffusion de votre affaire aux membres de notre &ldquo;CLUB AFFAIRE&ldquo;</li>
         <li>Diffusion sur Notre site web dédié aux professionnels</li>
         <li>Diffusion de votre offre sur les sites partenaires spécialisés dans la transmission de fonds de commerces (Cession PME, Transaction commerce, achat pme, Fnaim)</li>
         <li>La presse professionnelle et la presse quotidienne régionale</li>
