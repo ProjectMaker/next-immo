@@ -12,7 +12,7 @@ export default function ServicesPage() {
         Après la signature d&apos;un accord de confidentialité, nous vous mettons en relation avec le cédant afin de visiter son entreprise et élaborons un dossier d&apos;acquisition personnalisé en fonction des différentes hypothèses retenues pour vérifier la pérennité du projet.
       </p>
 
-      <h2 className={"text-medium text-lime-400 font-bold mb-4"}>L'Aventure Immobilière vous propose !</h2>
+      <h2 className={"text-medium text-lime-400 font-bold mb-4"}>L&apos;Aventure Immobilière vous propose !</h2>
 
       <p className="mb-4">
         Un accompagnement complet grâce à&nbsp;une maîtrise globale des principaux aspects techniques liés à la transmission de TPE/PME&nbsp;(mise en relation, négociation, optimisation des modalités de cession,)&nbsp;pour maximiser les chances de réussite de l&apos;opération.
@@ -20,32 +20,32 @@ export default function ServicesPage() {
 
       <ul className="list-disc ml-4 mb-4">
         <li>Une étude personnalisée du besoin de financement total (acquisition, droits&nbsp;et honoraires);</li>
-        <li>"Un dossier d'aide à la décision"  documents comptables, bail, rapport d'activité.</li>
+        <li>"Un dossier d&apos;aide à la décision"  documents comptables, bail, rapport d&apos;activité.</li>
         <li>Une visite détaillée des affaires sélectionnées</li>
         <li>Une validation financière des dossiers retenus</li>
-        <li>Transmission de votre dossier à nos partenaires bancaires pour l'obtention d'un accord</li>
+        <li>Transmission de votre dossier à nos partenaires bancaires pour l&apos;obtention d&apos;un accord</li>
         <li>Aide dans les Formalités administratives (agréments, licences, normes ...)</li>
-        <li>l'envoi des nouvelles affaires par mail avant leur parution grâce à notre "club affaire"</li>
-        <li>Aide  à la formalisation d'une offre et aux négociations</li>
-        <li>Définition de  votre stratégie patrimoniale après signature d'un mandat de recherche pour être informés les premiers de nos nouvelles opportunités d&apos;investissement</li>
+        <li>l&apos;envoi des nouvelles affaires par mail avant leur parution grâce à notre "club affaire"</li>
+        <li>Aide  à la formalisation d&apos;une offre et aux négociations</li>
+        <li>Définition de  votre stratégie patrimoniale après signature d&apos;un mandat de recherche pour être informés les premiers de nos nouvelles opportunités d&apos;investissement</li>
         <li>Mise à disposition de notre liste de prestataires sélectionnés (avocats, comptables, fournisseurs, architecte, courtiers, assureurs)</li>
       </ul>
 
-      <h2 className={"text-medium text-lime-400 font-bold mb-4"}>L'aventure Immobilière c'est aussi</h2>
+      <h2 className={"text-medium text-lime-400 font-bold mb-4"}>L&apos;aventure Immobilière c&apos;est aussi</h2>
       <p>
         Une aide personnalisée dans le développement de votre société.<br/><br/>
 
-        Nous sommes présents dans des domaines aussi variés que la recherche de locaux libres à acheter ou à louer, de terrains commerciaux et d'activité, de bâtiments industriels répondant aux contraintes et à la modernisation de votre activité.
+        Nous sommes présents dans des domaines aussi variés que la recherche de locaux libres à acheter ou à louer, de terrains commerciaux et d&apos;activité, de bâtiments industriels répondant aux contraintes et à la modernisation de votre activité.
       </p>
 
 
       <h1 className="text-base text-lime-400 font-bold mb-4">Nos services aux vendeurs</h1>
 
       <p className="mb-4">
-        Un consultant spécialisé dans votre secteur d'activité se déplace chez vous pour un entretien et une visite de votre affaire afin de lui fournir toutes les informations relatives à votre projet, vos besoins et vos attentes.
+        Un consultant spécialisé dans votre secteur d&apos;activité se déplace chez vous pour un entretien et une visite de votre affaire afin de lui fournir toutes les informations relatives à votre projet, vos besoins et vos attentes.
       </p>
       <p className="mb-4">
-        A travers l&apos;analyse de vos comptes annuels, le matériel et les conditions d&apos;exploitation, de votre bail ainsi que du barème d'évaluation de manière à l&apos;évaluer au plus juste, nous vous offrons une estimation pertinente et adapté à votre situation professionnelle.
+        A travers l&apos;analyse de vos comptes annuels, le matériel et les conditions d&apos;exploitation, de votre bail ainsi que du barème d&apos;évaluation de manière à l&apos;évaluer au plus juste, nous vous offrons une estimation pertinente et adapté à votre situation professionnelle.
       </p>
       <p className={"mb-4 font-semibold text-lime-400"}>
         Diffusion gratuite de votre annonce
