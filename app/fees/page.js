@@ -39,7 +39,7 @@ export default function FeesPage() {
       <table className="border-collapse w-full mb-2">
         <tbody>
         <tr>
-          <td align="left">Recherche d'un locataire</td>
+          <td align="left">Recherche d&apos;un locataire</td>
           <td colSpan="2" align="right">12% du loyer annuel</td>
         </tr>
         <tr>
@@ -78,7 +78,7 @@ export default function FeesPage() {
         </tbody>
       </table>
       <h1 className="text-base  font-bold mb-4 text-lime-400">Locations professionnelles</h1>
-      <p>10% HT du loyer de la période triennale hors frais de rédaction et d'état des lieux</p>
+      <p>10% HT du loyer de la période triennale hors frais de rédaction et d&apos;état des lieux</p>
     </div>
   )
 }
