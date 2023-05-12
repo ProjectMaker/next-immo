@@ -33,7 +33,7 @@ export default async function Detail({searchParams, params}) {
       </ul>
       {
         Boolean(detail.pictures.length) && detail.pictures.map(({id, url}) => (
-          <div key={id} className="mt-2"><Image src={url} width={400} height={400}/></div>
+          <div key={id} className="mt-2"><Image src={url} width={400} height={400} alt={`${detail.title}-${id}`}/></div>
         ))
       }
     </div>
