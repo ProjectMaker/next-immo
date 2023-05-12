@@ -2,13 +2,13 @@
 import Image from "next/image"
 
 const ITEMS = [{
-  img: '/carousel/photo1.jpeg',
-  label: 'COMMERCES ALIMENTAIRES',
-  description: 'Qu&apos;ils soient Artisans, Boulangers, Primeurs, Traiteurs ou Restaurateurs, Nombreux sont les professionnels nous ayant fait confiance pour l&apos;acquisition ou la vente de leur affaire.'
-}, {
   img: '/carousel/photo2.jpeg',
   label: 'LAVERIES-PRESSINGS',
   description: 'Acteur incontournable du secteur, notre cabinet compte plus de 600 clients en portefeuille et vous guide pour appréhender au mieux les pratiques de l&apos;activité (mises aux normes, rentabilité, étude financière).'
+}, {
+  img: '/carousel/photo1.jpeg',
+  label: 'COMMERCES ALIMENTAIRES',
+  description: 'Qu&apos;ils soient Artisans, Boulangers, Primeurs, Traiteurs ou Restaurateurs, Nombreux sont les professionnels nous ayant fait confiance pour l&apos;acquisition ou la vente de leur affaire.'
 }, {
   img: '/carousel/photo3.jpeg',
   label: 'HOTELS',
