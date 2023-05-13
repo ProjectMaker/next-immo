@@ -13,7 +13,7 @@ export default async function Home({ searchParams }) {
   return (
     <div>
       <div className="flex justify-between">
-        <div>{paginate.nbItems} annonces</div>
+        <div>{paginate.nbItems} annonce(s)</div>
         <ListboxAdv
           items={type ? [{label: "Tous les types de bien", value: "ALL"}, ...TYPES] : TYPES}
           defaultSelected={TYPES.find(({value}) => value === type)}
@@ -38,6 +38,11 @@ export default async function Home({ searchParams }) {
           </div>
       </div>
       <div className="mt-8">
+        {
+          Boolean(!list.length) && (
+            <div className={"md:w-[896px]"}> <h1>Aucune annonce ne correspond à votre recherche</h1></div>
+          )
+        }
         {
           list.map(item => {
             return (
