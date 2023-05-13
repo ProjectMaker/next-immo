@@ -1,8 +1,10 @@
 import dayjs from "dayjs";
 import Image from "next/image";
-import getList, { pagination, TYPES } from "@/lib/advertisment";
-import {ListboxAdv} from "../../components/Listbox";
 import classNames from "classnames";
+import getList, { pagination, TYPES } from "@/lib/advertisment";
+import { ListboxAdv } from "@/components/Listbox";
+
+
 export default async function Home({ searchParams }) {
   const {page = '1', type} = searchParams
   const list = await getList({page, type})
@@ -22,7 +24,7 @@ export default async function Home({ searchParams }) {
         <div className="flex ">
             {prevPage && (
               <div className="mr-4">
-                <a href={`/advertisment/?page=${prevPage}`}>
+                <a href={`/advertisment/?page=${prevPage}&type=${type}`}>
                   <div className="rounded-2xl border-2 bg-white text-neutral-500 border-lime-400" ><i className="fa fa-arrow-left-long mr-2 ml-2" /></div>
                 </a>
               </div>
@@ -30,7 +32,7 @@ export default async function Home({ searchParams }) {
             <div>{paginate.page} / {paginate.nbPages}</div>
             {nextPage && (
               <div className="ml-4">
-                <a href={`/advertisment/?page=${nextPage}`}>
+                <a href={`/advertisment/?page=${nextPage}&type=${type}`}>
                   <div className="rounded-2xl border-2 bg-white text-neutral-500 border-lime-400" ><i className="fa fa-arrow-right-long ml-2 mr-2" /></div>
                 </a>
               </div>
@@ -62,7 +64,7 @@ export default async function Home({ searchParams }) {
                   }
                   <div className={classNames("mt-2 ml-0 md:mt-0", item.pictures.length ? "md:ml-4" : "")} dangerouslySetInnerHTML={{__html: item.content}} />
                 </div>
-                <a href={`/advertisment/${item.id}/?page=${paginate.page}`}>
+                <a href={`/advertisment/${item.id}/?page=${paginate.page}&type=${type}`}>
                   <div className={"self-end px-3 py-2 text-neutral-500 bg-white font-medium rounded-md border-2 border-lime-400"}>
                     Voir le détail
                   </div>
