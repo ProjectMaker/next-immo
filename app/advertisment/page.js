@@ -6,10 +6,10 @@ import { ListboxAdv } from "@/components/Listbox";
 
 
 export default async function Home({ searchParams }) {
-  const {page = '1', type} = searchParams
+  const {page = '1', type = 'ALL'} = searchParams
   const list = await getList({page, type})
 
-  const paginate = await pagination(searchParams)
+  const paginate = await pagination({page, type})
   const nextPage = paginate.page < paginate.nbPages ? paginate.page + 1 : null
   const prevPage = paginate.page > 1  ? paginate.page - 1 : null
   return (
