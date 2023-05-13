@@ -17,7 +17,7 @@ export default async function Home({ searchParams }) {
       <div className="flex justify-between">
         <div>{paginate.nbItems} annonce(s)</div>
         <ListboxAdv
-          items={type ? [{label: "Tous les types de bien", value: "ALL"}, ...TYPES] : TYPES}
+          items={type ? [{label: "Tous les types de biens", value: "ALL"}, ...TYPES] : TYPES}
           defaultSelected={TYPES.find(({value}) => value === type)}
           placeholder={"Tous les types de bien"}
         />
