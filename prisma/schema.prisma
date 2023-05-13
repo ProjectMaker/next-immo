@@ -33,6 +33,7 @@ model RealEstateAd {
     createdAt           DateTime    @default(now())
     updatedAt           DateTime    @updatedAt
     pictures            RealEstateAdPicture[]
+    type                String      @default("UNKNOWN")
 }
 
 model RealEstateAdPicture {

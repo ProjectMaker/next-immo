@@ -1,10 +1,11 @@
 import dayjs from "dayjs";
 import Image from "next/image";
-import getList, { pagination } from "@/lib/advertisment";
-
-const Home = async ({ searchParams }) => {
-  const {page = '1'} = searchParams
-  const list = await getList({page})
+import getList, { pagination, TYPES } from "@/lib/advertisment";
+import {ListboxAdv} from "../../components/Listbox";
+import classNames from "classnames";
+export default async function Home({ searchParams }) {
+  const {page = '1', type} = searchParams
+  const list = await getList({page, type})
 
   const paginate = await pagination(searchParams)
   const nextPage = paginate.page < paginate.nbPages ? paginate.page + 1 : null
@@ -13,6 +14,11 @@ const Home = async ({ searchParams }) => {
     <div>
       <div className="flex justify-between">
         <div>{paginate.nbItems} annonces</div>
+        <ListboxAdv
+          items={type ? [{label: "Tous les types de bien", value: "ALL"}, ...TYPES] : TYPES}
+          defaultSelected={TYPES.find(({value}) => value === type)}
+          placeholder={"Tous les types de bien"}
+        />
         <div className="flex ">
             {prevPage && (
               <div className="mr-4">
@@ -49,7 +55,7 @@ const Home = async ({ searchParams }) => {
                        <Image width={200} height={100} src={item.pictures[0].url} alt={item.title}/>
                     )
                   }
-                  <div className={"mt-2 ml-0 md:mt-0 md:ml-4"} dangerouslySetInnerHTML={{__html: item.content}} />
+                  <div className={classNames("mt-2 ml-0 md:mt-0", item.pictures.length ? "md:ml-4" : "")} dangerouslySetInnerHTML={{__html: item.content}} />
                 </div>
                 <a href={`/advertisment/${item.id}/?page=${paginate.page}`}>
                   <div className={"self-end px-3 py-2 text-neutral-500 bg-white font-medium rounded-md border-2 border-lime-400"}>
@@ -61,9 +67,6 @@ const Home = async ({ searchParams }) => {
           })
         }
       </div>
-
     </div>
   )
 }
-
-export default Home
