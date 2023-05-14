@@ -17,7 +17,7 @@ function Item({img, label, description}) {
 
 export default function ImmoCarousel({items}) {
   return (
-    <Carousel showArrows={true}>
+    <Carousel showArrows autoPlay>
       {
         items.map(item => <Item key={item.label} {...item} />)
       }

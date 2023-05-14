@@ -1,0 +1,890 @@
+[
+    {
+        "code": "0",
+        "label": "Bien immobilier"
+    },
+    {
+        "code": "1000",
+        "label": "Bien habitation (particuliers)"
+    },
+    {
+        "code": "1100",
+        "label": "Appartement"
+    },
+    {
+        "code": "1111",
+        "label": "Appartement ancien"
+    },
+    {
+        "code": "1112",
+        "label": "Appartement bourgeois"
+    },
+    {
+        "code": "1113",
+        "label": "Appartement à rénover"
+    },
+    {
+        "code": "1114",
+        "label": "Appartement rénové"
+    },
+    {
+        "code": "1115",
+        "label": "Appartement récent"
+    },
+    {
+        "code": "1116",
+        "label": "Appartement neuf"
+    },
+    {
+        "code": "1131",
+        "label": "Chambre"
+    },
+    {
+        "code": "1132",
+        "label": "Studio"
+    },
+    {
+        "code": "1133",
+        "label": "T1"
+    },
+    {
+        "code": "1134",
+        "label": "T1 bis"
+    },
+    {
+        "code": "1135",
+        "label": "T2"
+    },
+    {
+        "code": "1136",
+        "label": "T3"
+    },
+    {
+        "code": "1137",
+        "label": "T4"
+    },
+    {
+        "code": "1138",
+        "label": "T5"
+    },
+    {
+        "code": "1139",
+        "label": "T6 et plus"
+    },
+    {
+        "code": "1180",
+        "label": "Habitation de loisirs"
+    },
+    {
+        "code": "1190",
+        "label": "Autre"
+    },
+    {
+        "code": "1191",
+        "label": "Loft"
+    },
+    {
+        "code": "1192",
+        "label": "Duplex/Triplex"
+    },
+    {
+        "code": "1193",
+        "label": "Meublé"
+    },
+    {
+        "code": "1194",
+        "label": "Penthouse"
+    },
+    {
+        "code": "1200",
+        "label": "Maison"
+    },
+    {
+        "code": "1210",
+        "label": "Maison individuelle"
+    },
+    {
+        "code": "1211",
+        "label": "Maison neuve"
+    },
+    {
+        "code": "1212",
+        "label": "Pavillon"
+    },
+    {
+        "code": "1213",
+        "label": "Villa"
+    },
+    {
+        "code": "1214",
+        "label": "Maison de village"
+    },
+    {
+        "code": "1215",
+        "label": "Maison de ville"
+    },
+    {
+        "code": "1216",
+        "label": "Mas"
+    },
+    {
+        "code": "1217",
+        "label": "Mazet"
+    },
+    {
+        "code": "1218",
+        "label": "Chalet"
+    },
+    {
+        "code": "1219",
+        "label": "Maison en bois"
+    },
+    {
+        "code": "1220",
+        "label": "Moulin"
+    },
+    {
+        "code": "1221",
+        "label": "Maison de rapport"
+    },
+    {
+        "code": "1222",
+        "label": "Maison ancienne"
+    },
+    {
+        "code": "1223",
+        "label": "Maison traditionnelle"
+    },
+    {
+        "code": "1224",
+        "label": "Maison d'architecte"
+    },
+    {
+        "code": "1225",
+        "label": "Maison de bourg"
+    },
+    {
+        "code": "1226",
+        "label": "Maison en pierres"
+    },
+    {
+        "code": "1227",
+        "label": "Maison à rénover"
+    },
+    {
+        "code": "1228",
+        "label": "Echoppe bordelaise"
+    },
+    {
+        "code": "1229",
+        "label": "Maison récente"
+    },
+    {
+        "code": "1230",
+        "label": "Maison bourgeoise"
+    },
+    {
+        "code": "1231",
+        "label": "Maison détachée"
+    },
+    {
+        "code": "1232",
+        "label": "Maison jumelée"
+    },
+    {
+        "code": "1233",
+        "label": "Maison en rangée"
+    },
+    {
+        "code": "1234",
+        "label": "Riad"
+    },
+    {
+        "code": "1235",
+        "label": "Bastide"
+    },
+    {
+        "code": "1240",
+        "label": "Propriété"
+    },
+    {
+        "code": "1241",
+        "label": "Château"
+    },
+    {
+        "code": "1242",
+        "label": "Hôtel particulier"
+    },
+    {
+        "code": "1243",
+        "label": "Manoir"
+    },
+    {
+        "code": "1244",
+        "label": "Maison de maître"
+    },
+    {
+        "code": "1245",
+        "label": "Demeure ancienne"
+    },
+    {
+        "code": "1246",
+        "label": "Demeure traditionnelle"
+    },
+    {
+        "code": "1247",
+        "label": "Demeure contemporaine"
+    },
+    {
+        "code": "1248",
+        "label": "Demeure"
+    },
+    {
+        "code": "1249",
+        "label": "Haras"
+    },
+    {
+        "code": "1250",
+        "label": "Ranch"
+    },
+    {
+        "code": "1251",
+        "label": "Palais"
+    },
+    {
+        "code": "1252",
+        "label": "Propriété viticole"
+    },
+    {
+        "code": "1253",
+        "label": "Propriété équestre"
+    },
+    {
+        "code": "1254",
+        "label": "Centre équestre"
+    },
+    {
+        "code": "1260",
+        "label": "Maison située en campagne"
+    },
+    {
+        "code": "1261",
+        "label": "Maison de campagne"
+    },
+    {
+        "code": "1262",
+        "label": "Fermette"
+    },
+    {
+        "code": "1263",
+        "label": "Ferme"
+    },
+    {
+        "code": "1264",
+        "label": "Longère"
+    },
+    {
+        "code": "1265",
+        "label": "Remise"
+    },
+    {
+        "code": "1266",
+        "label": "Grange"
+    },
+    {
+        "code": "1267",
+        "label": "Corps de ferme"
+    },
+    {
+        "code": "1268",
+        "label": "Chaumière"
+    },
+    {
+        "code": "1280",
+        "label": "Habitation de loisirs"
+    },
+    {
+        "code": "1281",
+        "label": "Bungalow"
+    },
+    {
+        "code": "1282",
+        "label": "Gîte"
+    },
+    {
+        "code": "1283",
+        "label": "Chambre d'hôtes"
+    },
+    {
+        "code": "1284",
+        "label": "Mobil-home"
+    },
+    {
+        "code": "1290",
+        "label": "Divers maison"
+    },
+    {
+        "code": "1300",
+        "label": "Terrain"
+    },
+    {
+        "code": "1310",
+        "label": "Terrain à bâtir"
+    },
+    {
+        "code": "1320",
+        "label": "ZI/ZAC"
+    },
+    {
+        "code": "1330",
+        "label": "Lotissement"
+    },
+    {
+        "code": "1340",
+        "label": "Programme terrain+maison"
+    },
+    {
+        "code": "1350",
+        "label": "Terrain à aménager"
+    },
+    {
+        "code": "1351",
+        "label": "Jardin"
+    },
+    {
+        "code": "1352",
+        "label": "Terrain de loisirs"
+    },
+    {
+        "code": "1360",
+        "label": "Terrain agricole"
+    },
+    {
+        "code": "1370",
+        "label": "Ile"
+    },
+    {
+        "code": "1390",
+        "label": "Divers terrains"
+    },
+    {
+        "code": "1391",
+        "label": "Forêt"
+    },
+    {
+        "code": "1392",
+        "label": "Golf"
+    },
+    {
+        "code": "1393",
+        "label": "Etang"
+    },
+    {
+        "code": "1400",
+        "label": "Stationnement"
+    },
+    {
+        "code": "1410",
+        "label": "Parking"
+    },
+    {
+        "code": "1411",
+        "label": "Parking couvert"
+    },
+    {
+        "code": "1412",
+        "label": "Parking externe"
+    },
+    {
+        "code": "1420",
+        "label": "Garage/box"
+    },
+    {
+        "code": "1421",
+        "label": "Garage individuel"
+    },
+    {
+        "code": "1422",
+        "label": "Place de garage"
+    },
+    {
+        "code": "1500",
+        "label": "Immeuble"
+    },
+    {
+        "code": "1900",
+        "label": "Divers"
+    },
+    {
+        "code": "1901",
+        "label": "Cave"
+    },
+    {
+        "code": "1902",
+        "label": "Grenier"
+    },
+    {
+        "code": "1903",
+        "label": "Cabanon"
+    },
+    {
+        "code": "1904",
+        "label": "Caveau/Concession"
+    },
+    {
+        "code": "1905",
+        "label": "Hangar"
+    },
+    {
+        "code": "1906",
+        "label": "Péniche"
+    },
+    {
+        "code": "2000",
+        "label": "Bien d'entreprise ou commerce (professionnels)"
+    },
+    {
+        "code": "2100",
+        "label": "Industrie/Production"
+    },
+    {
+        "code": "2110",
+        "label": "Agriculture/Viticulture"
+    },
+    {
+        "code": "2111",
+        "label": "Exploitation agricole"
+    },
+    {
+        "code": "2112",
+        "label": "Exploitation viticole"
+    },
+    {
+        "code": "2130",
+        "label": "Agroalimentaire"
+    },
+    {
+        "code": "2140",
+        "label": "BTP"
+    },
+    {
+        "code": "2150",
+        "label": "Charpente/Menuiserie/Couverture"
+    },
+    {
+        "code": "2160",
+        "label": "Mécanique/Métallurgie"
+    },
+    {
+        "code": "2190",
+        "label": "Divers industrie"
+    },
+    {
+        "code": "2200",
+        "label": "Services"
+    },
+    {
+        "code": "2201",
+        "label": "Garage/Station service"
+    },
+    {
+        "code": "2202",
+        "label": "Nettoyage/Pressing/Teinturerie"
+    },
+    {
+        "code": "2203",
+        "label": "Conseil"
+    },
+    {
+        "code": "2204",
+        "label": "Dépannage/Réparation"
+    },
+    {
+        "code": "2205",
+        "label": "Electricité/Electronique"
+    },
+    {
+        "code": "2206",
+        "label": "Professions immobilières"
+    },
+    {
+        "code": "2207",
+        "label": "Loisirs/Tourisme"
+    },
+    {
+        "code": "2208",
+        "label": "Plomberie"
+    },
+    {
+        "code": "2209",
+        "label": "Professions libérales"
+    },
+    {
+        "code": "2210",
+        "label": "Prestations multimedia"
+    },
+    {
+        "code": "2211",
+        "label": "Publicité"
+    },
+    {
+        "code": "2212",
+        "label": "Santé"
+    },
+    {
+        "code": "2213",
+        "label": "Transports/Taxi"
+    },
+    {
+        "code": "2214",
+        "label": "Vidéo/Photo"
+    },
+    {
+        "code": "2215",
+        "label": "Carrelage/Maçonnerie"
+    },
+    {
+        "code": "2216",
+        "label": "Peinture/Vitrerie/Plâtrerie"
+    },
+    {
+        "code": "2217",
+        "label": "Serrurerie/Métallerie"
+    },
+    {
+        "code": "2290",
+        "label": "Divers services"
+    },
+    {
+        "code": "2291",
+        "label": "Multiservices"
+    },
+    {
+        "code": "2300",
+        "label": "Commerces/Negoce"
+    },
+    {
+        "code": "2310",
+        "label": "Café/Hôtel/Restaurant"
+    },
+    {
+        "code": "2311",
+        "label": "Bar/Brasserie/Tabac"
+    },
+    {
+        "code": "2321",
+        "label": "Hôtel"
+    },
+    {
+        "code": "2312",
+        "label": "Hôtel Restaurant"
+    },
+    {
+        "code": "2313",
+        "label": "Restaurant"
+    },
+    {
+        "code": "2314",
+        "label": "Crêperie/Pizzeria"
+    },
+    {
+        "code": "2315",
+        "label": "Restauration rapide"
+    },
+    {
+        "code": "2316",
+        "label": "Salon de thé"
+    },
+    {
+        "code": "2317",
+        "label": "Sandwicherie"
+    },
+    {
+        "code": "2318",
+        "label": "Camping"
+    },
+    {
+        "code": "2319",
+        "label": "Club/Discothèque"
+    },
+    {
+        "code": "2320",
+        "label": "Glacier"
+    },
+    {
+        "code": "2322",
+        "label": "Gîte"
+    },
+    {
+        "code": "2323",
+        "label": "Chambres d'hôtes"
+    },
+    {
+        "code": "2330",
+        "label": "Commerce alimentaire"
+    },
+    {
+        "code": "2331",
+        "label": "Boucherie/Charcuterie"
+    },
+    {
+        "code": "2332",
+        "label": "Poissonnerie"
+    },
+    {
+        "code": "2333",
+        "label": "Alimentation"
+    },
+    {
+        "code": "2334",
+        "label": "Boulangerie/Pâtisserie"
+    },
+    {
+        "code": "2335",
+        "label": "Traiteur"
+    },
+    {
+        "code": "2336",
+        "label": "Crèmerie/Fromagerie"
+    },
+    {
+        "code": "2337",
+        "label": "Epicerie/Primeur"
+    },
+    {
+        "code": "2338",
+        "label": "Chocolaterie"
+    },
+    {
+        "code": "2340",
+        "label": "Equipement de la personne"
+    },
+    {
+        "code": "2341",
+        "label": "Bijouterie/Horlogerie"
+    },
+    {
+        "code": "2342",
+        "label": "Chaussure/Cuir"
+    },
+    {
+        "code": "2343",
+        "label": "Habillement/Textile"
+    },
+    {
+        "code": "2350",
+        "label": "Parfumerie/Coiffure/Cadeaux/Fleurs"
+    },
+    {
+        "code": "2351",
+        "label": "Cadeaux/Fleurs"
+    },
+    {
+        "code": "2352",
+        "label": "Beauté/Esthétique/Coiffure"
+    },
+    {
+        "code": "2360",
+        "label": "Librairie/Papeterie/Tabac/Presse"
+    },
+    {
+        "code": "2361",
+        "label": "Librairie/Papeterie"
+    },
+    {
+        "code": "2362",
+        "label": "Tabac/Presse"
+    },
+    {
+        "code": "2370",
+        "label": "Equipement de la maison"
+    },
+    {
+        "code": "2371",
+        "label": "HiFi/Electroménager"
+    },
+    {
+        "code": "2372",
+        "label": "Informatique/Multimedia"
+    },
+    {
+        "code": "2373",
+        "label": "Mobilier/Décoration"
+    },
+    {
+        "code": "2374",
+        "label": "Art de la table"
+    },
+    {
+        "code": "2380",
+        "label": "Autos/Motos/Scooters/Cycles"
+    },
+    {
+        "code": "2381",
+        "label": "Autos"
+    },
+    {
+        "code": "2382",
+        "label": "Motos/Scooters"
+    },
+    {
+        "code": "2383",
+        "label": "Cycles"
+    },
+    {
+        "code": "2390",
+        "label": "Divers commerces"
+    },
+    {
+        "code": "2391",
+        "label": "Pharmacie"
+    },
+    {
+        "code": "2392",
+        "label": "Animalerie/Chasse/Pêche"
+    },
+    {
+        "code": "2393",
+        "label": "Cave à vins"
+    },
+    {
+        "code": "2394",
+        "label": "Musique/Disques"
+    },
+    {
+        "code": "2395",
+        "label": "Quincaillerie/Bricolage"
+    },
+    {
+        "code": "2396",
+        "label": "Jardinerie/Animalerie"
+    },
+    {
+        "code": "2397",
+        "label": "Pépinière/Horticulture"
+    },
+    {
+        "code": "2398",
+        "label": "Magasin de jouets"
+    },
+    {
+        "code": "2400",
+        "label": "Locaux/Biens immobiliers"
+    },
+    {
+        "code": "2410",
+        "label": "Bureau"
+    },
+    {
+        "code": "2420",
+        "label": "Local d'activité"
+    },
+    {
+        "code": "2421",
+        "label": "Local artisanal"
+    },
+    {
+        "code": "2422",
+        "label": "Local industriel/Entrepôt"
+    },
+    {
+        "code": "2423",
+        "label": "Loft/Atelier"
+    },
+    {
+        "code": "2430",
+        "label": "Local commercial"
+    },
+    {
+        "code": "2431",
+        "label": "Boutique"
+    },
+    {
+        "code": "2490",
+        "label": "Divers immobilier d'entreprise"
+    },
+    {
+        "code": "2491",
+        "label": "Bâtiment"
+    },
+    {
+        "code": "2492",
+        "label": "Centre d'affaires"
+    },
+    {
+        "code": "2493",
+        "label": "Plateau"
+    },
+    {
+        "code": "2450",
+        "label": "Coworking"
+    },
+    {
+        "code": "2453",
+        "label": "Salle de réunion"
+    },
+    {
+        "code": "2452",
+        "label": "Bureau fermé"
+    },
+    {
+        "code": "2451",
+        "label": "Open Space"
+    },
+    {
+        "code": "2900",
+        "label": "Divers professionnel"
+    },
+    {
+        "code": "3000",
+        "label": "Programme neuf"
+    },
+    {
+        "code": "3100",
+        "label": "Programme de maisons"
+    },
+    {
+        "code": "3200",
+        "label": "Programme d'appartements"
+    },
+    {
+        "code": "3300",
+        "label": "Lotissement"
+    },
+    {
+        "code": "3400",
+        "label": "Programme de bureaux"
+    },
+    {
+        "code": "3500",
+        "label": "Programme appartements + maisons"
+    },
+    {
+        "code": "4000",
+        "label": "Lot neuf type"
+    },
+    {
+        "code": "4100",
+        "label": "Lot de maisons"
+    },
+    {
+        "code": "4200",
+        "label": "Lot d'appartements"
+    },
+    {
+        "code": "4300",
+        "label": "Lot de terrains"
+    },
+    {
+        "code": "4400",
+        "label": "Lot de bureaux"
+    },
+    {
+        "code": "5000",
+        "label": "Programme"
+    },
+    {
+        "code": "5200",
+        "label": "Programme Terrain + Maison"
+    }
+]

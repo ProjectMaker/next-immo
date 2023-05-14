@@ -2,14 +2,14 @@ import Image from "next/image"
 import { getDetail } from "@/lib/advertisment";
 
 export default async function Detail({searchParams, params}) {
-  const {page = '1', type} = searchParams
+  const {page = '1', type = 'ALL', category = 'ALL' } = searchParams
   const detail = await getDetail(parseInt(params.id))
 
   return (
     <div className="text-sm">
       <div className="flex justify-between">
         <h1 className="text-lg font-bold mb-4 text-lime-400">{detail.title}</h1>
-        <a href={`/advertisment/?page=${page}&type=${type}`}>
+        <a href={`/advertisment/?page=${page}&type=${type}&category=${category}`}>
           <div className={"px-3 py-2 text-neutral-500 bg-white  font-medium rounded-md border-2 border-lime-400"}>
             <i className="fa fa-arrow-left-long mr-2" />
             <div className={"hidden ml-2 md:inline-flex md:ml-0"}>Retour</div>
