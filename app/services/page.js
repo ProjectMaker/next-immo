@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Nos services',
+  description: 'Aux entrepreneurs, aux vendeurs',
+}
+
 export default function ServicesPage() {
   return (
     <div className={"text-sm"}>

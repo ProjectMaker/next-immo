@@ -2,7 +2,12 @@ import dayjs from "dayjs";
 import Image from "next/image";
 import classNames from "classnames";
 import getList, { pagination, TYPES } from "@/lib/advertisment";
-import { ListboxAdv } from "@/components/Listbox";
+import { ListboxAdv } from "@/components/client/Listbox";
+
+export const metadata = {
+  title: 'Acheter / Louer',
+  description: '',
+}
 
 export default async function Home({ searchParams }) {
   const {page = '1', type = 'ALL'} = searchParams

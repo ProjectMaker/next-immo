@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Menu, {BurgerMenu} from './Menu'
+import Menu, {BurgerMenu} from '../client/Menu'
 
 export default function Header() {
   return (

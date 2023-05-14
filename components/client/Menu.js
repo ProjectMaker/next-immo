@@ -39,7 +39,6 @@ function BurgerMenuLink({href, icon, children}) {
 
 export function BurgerMenu() {
   const pathname = usePathname()
-  console.log(pathname)
   const label = useMemo(() => {
     if (pathname === '/') {
       return "Accueil"

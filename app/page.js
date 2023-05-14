@@ -1,7 +1,10 @@
-'use client'
 import Image from "next/image"
-import { Carousel } from "react-responsive-carousel"
-import styles from "react-responsive-carousel/lib/styles/carousel.css";
+import ImmoCarousel from "@/components/client/Carousel";
+
+export const metadata = {
+  title: 'L\' agence',
+  description: 'Vente, location, cession de bail, fond de commerce',
+}
 
 const ITEMS = [{
   img: '/carousel/photo2.jpeg',
@@ -33,18 +36,6 @@ const ITEMS = [{
   description: 'Nous vous accompagnons dans la création et le développement de votre entreprise; recherche de locaux à vendre ou à Louer, Terrains d&apos;activité, Zones commerciales, Bureaux, entrepôts.'
 }]
 
-function CarouselItem({img, label, description}) {
-  return (
-    <div className={"md:w-[896px]"}>
-      <Image src={img} width={720} height={500} alt={label}/>
-      <div className="legend">
-        <div dangerouslySetInnerHTML={{__html: label}} />
-        <div dangerouslySetInnerHTML={{__html: description}} />
-      </div>
-    </div>
-  )
-}
-
 function Item({img, label, description}) {
   return (
     <div className="flex flex-col mb-4">
@@ -64,11 +55,7 @@ export default function Home() {
   return (
     <div className="text-sm">
       <div className={"hidden md:block"}>
-        <Carousel showArrows={true}>
-        {
-          ITEMS.map(item => <CarouselItem key={item.label} {...item} />)
-        }
-        </Carousel>
+        <ImmoCarousel items={ITEMS} />
       </div>
       <div  className="flex flex-col md:hidden">
         {

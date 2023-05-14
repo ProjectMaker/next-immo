@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Nos honoraires',
+  description: 'Grille tarifaire transaction et location',
+}
+
 export default function FeesPage() {
   return (
     <div className="text-sm">
