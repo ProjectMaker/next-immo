@@ -5,7 +5,7 @@ import getList, { pagination, TYPES } from "@/lib/advertisment";
 import { ListboxAdv } from "@/components/client/Listbox";
 
 export const metadata = {
-  title: 'Acheter / Louer',
+  title: 'Acheter / Louer | L\' agence immobilière',
   description: '',
 }
 

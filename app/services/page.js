@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Nos services',
+  title: 'Nos services | L\' agence immobilière',
   description: 'Aux entrepreneurs, aux vendeurs',
 }
 

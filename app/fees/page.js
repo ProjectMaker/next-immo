@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Nos honoraires',
+  title: 'Nos honoraires | L\' agence immobilière',
   description: 'Grille tarifaire transaction et location',
 }
 

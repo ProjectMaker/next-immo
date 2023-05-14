@@ -2,7 +2,7 @@ import Image from "next/image"
 import ImmoCarousel from "@/components/client/Carousel";
 
 export const metadata = {
-  title: 'L\' agence',
+  title: 'Acceuil | L\' agence immobilière',
   description: 'Vente, location, cession de bail, fond de commerce',
 }
 
