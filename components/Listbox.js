@@ -5,7 +5,7 @@ import { Listbox as ListboxBase, Transition } from '@headlessui/react'
 export default function Listbox({placeholder = 'Choose', defaultSelected, items, onChange = () => {}}) {
   const [selected, setSelected] = useState(defaultSelected)
   return (
-    <div className="w-72">
+    <div className="w-[100%]">
       <ListboxBase
         value={selected}
         onChange={item => {
@@ -35,7 +35,7 @@ export default function Listbox({placeholder = 'Choose', defaultSelected, items,
                   key={item.value}
                   className={({ active }) =>
                     `relative cursor-default select-none py-2 pl-4 pr-4 ${
-                      active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'
+                      active ? 'bg-lime-100 text-neutral-500' : 'text-gray-900'
                     }`
                   }
                   value={item}

@@ -4,7 +4,6 @@ import classNames from "classnames";
 import getList, { pagination, TYPES } from "@/lib/advertisment";
 import { ListboxAdv } from "@/components/Listbox";
 
-
 export default async function Home({ searchParams }) {
   const {page = '1', type = 'ALL'} = searchParams
   const list = await getList({page, type})
@@ -16,11 +15,13 @@ export default async function Home({ searchParams }) {
     <div>
       <div className="flex justify-between">
         <div>{paginate.nbItems} annonce(s)</div>
-        <ListboxAdv
-          items={type ? [{label: "Tous les types de biens", value: "ALL"}, ...TYPES] : TYPES}
-          defaultSelected={TYPES.find(({value}) => value === type)}
-          placeholder={"Tous les types de bien"}
-        />
+        <div className={"hidden md:block"}>
+          <ListboxAdv
+            items={type ? [{label: "Tous les types de biens", value: "ALL"}, ...TYPES] : TYPES}
+            defaultSelected={TYPES.find(({value}) => value === type)}
+            placeholder={"Tous les types de bien"}
+          />
+        </div>
         <div className="flex ">
             {prevPage && (
               <div className="mr-4">
@@ -38,6 +39,13 @@ export default async function Home({ searchParams }) {
               </div>
             )}
           </div>
+      </div>
+      <div className={"block md:hidden"}>
+        <ListboxAdv
+          items={type ? [{label: "Tous les types de biens", value: "ALL"}, ...TYPES] : TYPES}
+          defaultSelected={TYPES.find(({value}) => value === type)}
+          placeholder={"Tous les types de bien"}
+        />
       </div>
       <div className="mt-8">
         {

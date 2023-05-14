@@ -7,12 +7,12 @@ export default async function Detail({searchParams, params}) {
 
   return (
     <div className="text-sm">
-      <div class="flex justify-between">
+      <div className="flex justify-between">
         <h1 className="text-lg font-bold mb-4 text-lime-400">{detail.title}</h1>
         <a href={`/advertisment/?page=${page}&type=${type}`}>
-          <div className={"px-3 py-2 text-neutral-500 bg-white font-medium rounded-md border-2 border-lime-400"}>
+          <div className={"px-3 py-2 text-neutral-500 bg-white  font-medium rounded-md border-2 border-lime-400"}>
             <i className="fa fa-arrow-left-long mr-2" />
-            Retour
+            <div className={"hidden ml-2 md:inline-flex md:ml-0"}>Retour</div>
           </div>
         </a>
       </div>

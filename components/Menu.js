@@ -39,10 +39,11 @@ function BurgerMenuLink({href, icon, children}) {
 
 export function BurgerMenu() {
   const pathname = usePathname()
+  console.log(pathname)
   const label = useMemo(() => {
     if (pathname === '/') {
       return "Accueil"
-    } else if (pathname === '/advertisment') {
+    } else if (/^\/advertisment/.test(pathname)) {
       return "Acheter / Louer"
     } else if (pathname === '/fees') {
       return "Nos honoraires"
