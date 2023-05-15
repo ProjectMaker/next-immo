@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import dayjs from "dayjs";
 import Image from "next/image";
 import classNames from "classnames";
@@ -9,7 +10,7 @@ export const metadata = {
   description: '',
 }
 
-export default async function Home({ searchParams }) {
+async function Content({searchParams}) {
   const {page = '1', type = 'ALL', category = 'ALL'} = searchParams
   const list = await getList({page, type, category})
   const categories = await getDistinctCodeTypes({type})
@@ -27,22 +28,22 @@ export default async function Home({ searchParams }) {
           <ListboxAdvCategory type={type} category={category} categories={categories}/>
         </div>
         <div className="flex ">
-            {prevPage && (
-              <div className="mr-4">
-                <a href={`/advertisment/?page=${prevPage}&type=${type}&category=${category}`}>
-                  <div className="rounded-2xl border-2 bg-white text-neutral-500 border-lime-400" ><i className="fa fa-arrow-left-long mr-2 ml-2" /></div>
-                </a>
-              </div>
-            )}
-            <div>{paginate.page} / {paginate.nbPages}</div>
-            {nextPage && (
-              <div className="ml-4">
-                <a href={`/advertisment/?page=${nextPage}&type=${type}&category=${category}`}>
-                  <div className="rounded-2xl border-2 bg-white text-neutral-500 border-lime-400" ><i className="fa fa-arrow-right-long ml-2 mr-2" /></div>
-                </a>
-              </div>
-            )}
-          </div>
+          {prevPage && (
+            <div className="mr-4">
+              <a href={`/advertisment/?page=${prevPage}&type=${type}&category=${category}`}>
+                <div className="rounded-2xl border-2 bg-white text-neutral-500 border-lime-400" ><i className="fa fa-arrow-left-long mr-2 ml-2" /></div>
+              </a>
+            </div>
+          )}
+          <div>{paginate.page} / {paginate.nbPages}</div>
+          {nextPage && (
+            <div className="ml-4">
+              <a href={`/advertisment/?page=${nextPage}&type=${type}&category=${category}`}>
+                <div className="rounded-2xl border-2 bg-white text-neutral-500 border-lime-400" ><i className="fa fa-arrow-right-long ml-2 mr-2" /></div>
+              </a>
+            </div>
+          )}
+        </div>
       </div>
       <div className={"block md:hidden"}>
         <ListboxAdvType type={type} category={category} />
@@ -74,7 +75,7 @@ export default async function Home({ searchParams }) {
                 <div className={"flex flex-col mt-4 mb-2 md:flex-row"}>
                   {
                     Boolean(item.pictures.length) && (
-                       <Image width={200} height={100} src={item.pictures[0].url} alt={item.title}/>
+                      <Image width={200} height={100} src={item.pictures[0].url} alt={item.title}/>
                     )
                   }
                   <div className={classNames("mt-2 ml-0 md:mt-0", item.pictures.length ? "md:ml-4" : "")} dangerouslySetInnerHTML={{__html: item.content}} />
@@ -90,5 +91,17 @@ export default async function Home({ searchParams }) {
         }
       </div>
     </div>
+  )
+}
+export default async function Home({ searchParams }) {
+  return (
+    <Suspense fallback={(
+      <div className={"flex justify-center items-center mt-2"}>
+        <i className="fa fa-spinner fa-spin mr-4"/>
+        Chargement de  la page
+      </div>
+    )}>
+      <Content searchParams={searchParams} />
+    </Suspense>
   )
 }

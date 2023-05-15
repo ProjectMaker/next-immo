@@ -1,5 +1,5 @@
 'use client'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useRef, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { Listbox as ListboxBase, Transition } from '@headlessui/react'
 import  TYPES from '@/lib/dictionary'
@@ -78,33 +78,31 @@ export default function Listbox({
 }
 
 export function ListboxAdvType({type, category}) {
-  const router = useRouter()
-
+  const items = useMemo(() => type !== 'ALL' ? [{label: "Tous les types de biens", value: "ALL"}, ...TYPES] : TYPES, [type, TYPES])
   return (
     <div className="w-[200px]">
-    <Listbox
-      placeholder={"Tous les types de biens"}
-      items={type !== 'ALL' ? [{label: "Tous les types de biens", value: "ALL"}, ...TYPES] : TYPES}
-      defaultSelected={TYPES.find(({value}) => value === type)}
-      onChange={item =>{
-        router.push(`/advertisment/?type=${item.value}&category=${category}`)
-      }}
-    />
+      <Listbox
+        placeholder={"Tous les types de biens"}
+        items={items}
+        defaultSelected={TYPES.find(({value}) => value === type)}
+        onChange={item =>{
+          window.location = `/advertisment/?type=${item.value}&category=${category}`
+        }}
+      />
     </div>
   )
 }
 
 export function ListboxAdvCategory({categories, category, type}) {
-  const router = useRouter()
-
+  const items = useMemo(() => category !== 'ALL' ? [{label: "Toutes les catégories", value: "ALL"}, ...categories] : categories, [category, categories])
   return (
     <div className="w-[200px]">
       <Listbox
         placeholder={"Toutes les catégories"}
-        items={category !== 'ALL' ? [{label: "Toutes les catégories", value: "ALL"}, ...categories] : categories}
+        items={items}
         defaultSelected={categories.find(({value}) => value === category)}
         onChange={item =>{
-          router.push(`/advertisment/?category=${item.value}&type=${type}`)
+          window.location = `/advertisment/?category=${item.value}&type=${type}`// router.push(`/advertisment/?category=${item.value}&type=${type}`)
         }}
       />
     </div>
