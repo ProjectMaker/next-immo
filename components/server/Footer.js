@@ -10,7 +10,7 @@ export default function Footer() {
              bottom-0
              p-1">
       <div className="flex items-center justify-between">
-        <div className="text-sm ml-4" >L&apos;Aventure Immobilière - 27 rue Francois de Tessan - 77330 Ozoir la Ferrière - Tél : 01 60 02 76 24 - Email : contact.ai@sfr.fr</div>
+        <div className="text-sm ml-4" >L'Aventure Immobilière - 27 rue Francois de Tessan - 77330 Ozoir la Ferrière - Tél : 01 60 02 76 24 - Email : contact.ai@sfr.fr</div>
 
         <div className="flex items-center mr-4">
           <div className="text-sm mr-2" >Recommandé par</div>
