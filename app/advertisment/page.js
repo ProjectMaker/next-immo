@@ -78,7 +78,7 @@ async function Content({page, type, category}) {
         <div className={"flex flex-col mt-4 mb-2 md:flex-row"}>
           {
             Boolean(item.pictures.length) && (
-              <Image width={200} height={100} src={item.pictures[0].url} alt={item.title}/>
+              <Image width={200} height={100} src={item.pictures[item.pictures.length -1].url} alt={item.title}/>
             )
           }
           <div className={classNames("mt-2 ml-0 md:mt-0", item.pictures.length ? "md:ml-4" : "")} dangerouslySetInnerHTML={{__html: item.content}} />
