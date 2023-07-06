@@ -4,7 +4,7 @@ import ImmoCarousel from "@/components/client/Carousel";
 import { CAROUSEL_ITEMS } from "@/lib/dictionary";
 
 export const metadata = {
-  title: 'Acceuil | L\' agence immobilière',
+  title: 'Accueil | L\' agence immobilière',
   description: 'Vente, location, cession de bail, fond de commerce',
 }
 
