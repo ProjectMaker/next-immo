@@ -8,5 +8,5 @@ export async function GET(req) {
     await sync()
     return NextResponse.json({ status: 200 });
   }
-  return NextResponse.json({error: `Bad token ${token}`}, { status: 401 });
+  return new NextResponse(`Bad token ${token}`, { status: 401 })
 }
